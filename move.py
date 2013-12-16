@@ -14,4 +14,6 @@ class Move:
             'Warehouse'), 'get_warehouse')
 
     def get_warehouse(self, name):
-        return self.shipment.warehouse.id if self.shipment.warehouse else None
+        if self.shipment:
+            return self.shipment.warehouse.id if self.shipment.warehouse else None
+        return None
