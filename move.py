@@ -5,10 +5,10 @@ from trytond.pool import PoolMeta
 from trytond.model import fields
 
 __all__ = ['Move']
-__metaclass__ = PoolMeta
 
 
 class Move:
+    __metaclass__ = PoolMeta
     __name__ = 'stock.move'
     warehouse = fields.Function(fields.Many2One('stock.location',
             'Warehouse'), 'get_warehouse')
