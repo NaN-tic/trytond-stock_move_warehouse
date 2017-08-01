@@ -4,8 +4,8 @@
 from trytond.pool import Pool
 from .move import *
 
+
 def register():
     Pool.register(
         Move,
         module='stock_move_warehouse', type_='model')
-

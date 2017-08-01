@@ -15,5 +15,6 @@ class Move:
 
     def get_warehouse(self, name):
         if self.shipment and hasattr(self.shipment, 'warehouse'):
-            return self.shipment.warehouse.id if self.shipment.warehouse else None
+            return (self.shipment.warehouse.id if self.shipment.warehouse
+                else None)
         return None
