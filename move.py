@@ -4,8 +4,6 @@
 from trytond.pool import PoolMeta
 from trytond.model import fields
 
-__all__ = ['Move']
-
 
 class Move(metaclass=PoolMeta):    
     __name__ = 'stock.move'
